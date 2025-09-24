@@ -1,27 +1,92 @@
 <body>
-  <header>
-    <h1>Наш сайт</h1>
+    <header>
+        <h1>Наш сайт</h1>
 
-    <nav>
-      <a href="#bottom">⬇ Вниз</a>
-      <nav aria-label="Головне меню">
-    <ul>
-        <li><a href="#home">Головна</a></li>
-        <li><a href="#services">Послуги</a></li>
-        <li><a href="#contact">Контакти</a></li>
-        <li><a href="#address">Адреса</a></li>
-    </ul>
+        <nav>
+            <a href="#bottom">⬇ Вниз</a>
+            <nav aria-label="Головне меню">
+                <ul>
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                    <li><a href="#address">Адреса</a></li>
+                </ul>
 
-    </nav>
-  </header>
-  <main>
-    
-  </main>
-    
+            </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Ласкаво просимо на наш сайт!</h2>
+            <p>Наші послуги включають:</p>
+            <ul>
+                <li>Веб-розробка</li>
+                <li>SEO-оптимізація</li>
+                <li>Кастомізовані рішення для вашого бізнесу</li>
+            </ul>
+        </section>
 
+        <section id="services">
+            <h2>Наші послуги</h2>
+            <article>
+                <h3>Веб-розробка</h3>
+                <p>Ми створюємо стильні, функціональні та швидкодіючі веб-сайти. Кожен сайт індивідуальний, створений
+                    відповідно до ваших вимог.</p>
+            </article>
+            <article>
+                <h3>SEO-оптимізація</h3>
+                <p>Забезпечуємо високий рейтинг у пошукових системах за допомогою ефективних SEO-стратегій, які
+                    допоможуть вам залучити більше клієнтів.</p>
+            </article>
+            <article>
+                <h3>Аналіз та консалтинг</h3>
+                <p>Наші фахівці допоможуть вам оптимізувати ваші бізнес-процеси та забезпечити максимальну ефективність
+                    вашого сайту.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Форма зворотного зв'язку</h2>
+            <p>Будь ласка, залиште свої контактні дані та повідомлення, і ми з вами зв'яжемося найближчим часом.</p>
+            <form action="/submit" method="POST">
+                <label for="name">Ім'я</label>
+                <input type="text" id="name" name="user_name" required><br>
+
+                <label for="email">Електронна пошта</label>
+                <input type="email" id="email" name="user_email" required><br>
+
+                <label for="password">Пароль</label>
+                <input type="password" id="password" name="user_password" required><br>
+
+                <label for="confirm">Підтвердити пароль</label>
+                <input type="password" id="confirm" name="confirm" required><br>
+
+                <label for="male">Чоловік</label>
+                <input type="radio" id="male" name="gender" value="male" required><br>
+
+                <label for="female">Жінка</label>
+                <input type="radio" id="female" name="gender" value="female"><br>
+
+                <label>
+                    <input type="checkbox" id="agree" name="agree" required>
+                    Погоджуюсь з умовами<br>
+                </label>
+
+                <input type="submit" value="Зареєструватися">
+            </form>
+        </section>
+
+        <section id="address">
+            <h2>Наші контакти</h2>
+            <p>Ви можете зв'язатися з нами за наступними даними:</p>
+            <ul>
+                <li>Телефон: +380 123 456 789</li>
+                <li>Електронна пошта: <a href="mailto:info@company.com">info@company.com</a></li>
+                <li>Адреса: вул. Панаса, 123, м. Кикс</li>
+            </ul>
+        </section>
+    </main>
     <footer>
-    <p><time datetime="2025-09-24">24 вересня 2025</time> Наш сайт</p>
-    <a href="#top">⬆ Вгору</a>
-  </footer>
-</body>      
-  
+        <p><time datetime="2025-09-24">24 вересня 2025</time> Наш сайт</p>
+        <a href="#top">⬆ Вгору</a>
+    </footer>
+</body>
